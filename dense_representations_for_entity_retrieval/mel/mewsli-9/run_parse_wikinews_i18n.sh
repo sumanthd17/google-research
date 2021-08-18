@@ -28,10 +28,10 @@ OUTPUT_BASE_DIR="${2:-${OUTPUT_BASE_DIR_DEFAULT}}"
 
 LANG_LIST=(ar de en es fa ja sr ta tr)
 
-MODULE="dense_representations_for_entity_retrieval.mel.wikinews_extractor.parse_wikinews_i18n"
-
+# MODULE="dense_representations_for_entity_retrieval.mel.wikinews_extractor.parse_wikinews_i18n"
+MODULE="wikinews_extractor.parse_wikinews_i18n"
 # Point PYTHONPATH to the google_research/ directory.
-export PYTHONPATH="${PYTHONPATH}:$(dirname $0)/../../../"
+# export PYTHONPATH="${PYTHONPATH}:$(dirname $0)/../../../"
 
 for lang in ${LANG_LIST[@]}; do
   date
