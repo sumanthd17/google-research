@@ -31,7 +31,7 @@ mkdir -p "${OUTDIR}"
 for lang in ${LANG_LIST[@]}; do
   echo ">Download '${lang}'..."
   filename="${lang}wiki-${DATE}-pages-articles.xml.bz2"
-  url="https://dumps.wikimedia.org/${lang}wik/${DATE}/${filename}"
+  url="https://dumps.wikimedia.org/${lang}wiki/${DATE}/${filename}"
   wget -a "${OUTDIR}/wget.log" -O "${OUTDIR}/${filename}" "${url}"
 done
 
