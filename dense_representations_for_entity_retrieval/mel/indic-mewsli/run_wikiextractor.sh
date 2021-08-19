@@ -35,7 +35,7 @@ TEMPLATES_DIR="${2:-${TEMPLATES_DIR_DEFAULT}}"
 INPUT_DUMP_DIR_DEFAULT="$(dirname $0)/output/download"
 INPUT_DUMP_DIR="${3:-${INPUT_DUMP_DIR_DEFAULT}}"
 
-LANG_LIST=(hi)
+LANG_LIST=(hi ta)
 
 if [[ ! -x "${WIKIEXTRACTOR}" ]]; then
   echo "! Cannot find runnable wikiextractor at ${WIKIEXTRACTOR}"

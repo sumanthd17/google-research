@@ -23,7 +23,7 @@ OUTDIR="${1:-${DEFAULT_OUTDIR}}"
 
 # Snapshot date and languages to target.
 DATE="20210801"
-LANG_LIST=(hi)
+LANG_LIST=(hi ta)
 # CHECKSUMS="$(readlink -e $(dirname $0))/dump_checksums.txt"
 
 mkdir -p "${OUTDIR}"
