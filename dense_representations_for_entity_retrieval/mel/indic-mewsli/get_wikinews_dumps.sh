@@ -24,7 +24,7 @@ OUTDIR="${1:-${DEFAULT_OUTDIR}}"
 # Snapshot date and languages to target.
 DATE="20210801"
 LANG_LIST=(hi)
-CHECKSUMS="$(readlink -e $(dirname $0))/dump_checksums.txt"
+# CHECKSUMS="$(readlink -e $(dirname $0))/dump_checksums.txt"
 
 mkdir -p "${OUTDIR}"
 
@@ -35,17 +35,17 @@ for lang in ${LANG_LIST[@]}; do
   wget -a "${OUTDIR}/wget.log" -O "${OUTDIR}/${filename}" "${url}"
 done
 
-echo ">Verify..."
+# echo ">Verify..."
 
-if [[ ! -f "${CHECKSUMS}" ]]; then
-  echo "! Failed to locate the checksums expected at ${CHECKSUMS}"
-  exit 1
-fi
+# if [[ ! -f "${CHECKSUMS}" ]]; then
+#   echo "! Failed to locate the checksums expected at ${CHECKSUMS}"
+#   exit 1
+# fi
 
-OLDPWD="${PWD}"
-cd "${OUTDIR}"
-md5sum -c ${CHECKSUMS}
-cd "${OLDPWD}"
+# OLDPWD="${PWD}"
+# cd "${OUTDIR}"
+# md5sum -c ${CHECKSUMS}
+# cd "${OLDPWD}"
 
 echo
 echo ">Done: ${OUTDIR}"
