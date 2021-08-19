@@ -26,7 +26,7 @@ INPUT_BASE_DIR="${1:-${INPUT_BASE_DIR_DEFAULT}}"
 OUTPUT_BASE_DIR_DEFAULT="$(dirname $0)/output/dataset"
 OUTPUT_BASE_DIR="${2:-${OUTPUT_BASE_DIR_DEFAULT}}"
 
-LANG_LIST=(hi)
+LANG_LIST=(hi ta)
 
 # MODULE="dense_representations_for_entity_retrieval.mel.wikinews_extractor.parse_wikinews_i18n"
 MODULE="wikinews_extractor.parse_wikinews_i18n"
