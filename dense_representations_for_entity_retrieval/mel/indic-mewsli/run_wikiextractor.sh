@@ -55,7 +55,7 @@ for lang in ${LANG_LIST[@]}; do
   # Output directory for this language.
   output_dir="${OUTPUT_BASE_DIR}/${lang}"
 
-  input="${INPUT_DUMP_DIR}/${lang}wiki-20210801-pages-articles.xml.bz2"
+  input="${INPUT_DUMP_DIR}/${lang}wiki-20210820-pages-articles.xml.bz2"
   mkdir -p ${output_dir}
   ${WIKIEXTRACTOR} \
       --templates "${templates}" \
